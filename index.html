@@ -2,26 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bakery Webpage</title>
+  <title>My Bakery Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Our Bakery</h1>
-  <p>Fresh bread made with love and care!</p>
+  <div class="container">
+    <header>
+      <h1>Welcome to My Bakery</h1>
+    </header>
 
- <!-- Picture 1: Baker -->
-  <img src="baker.jpg" alt="Baker with bread" class="bakery-image">
+    <section class="main-content">
+      <img src="baker.jpg" alt="Baker Image" class="main-image">
+      <p>Enjoy freshly baked goods every day!</p>
+      <button onclick="showMessage()">Click Me</button>
+    </section>
 
-  <!-- Picture 2: Bread -->
-  <img src="bread.jpg" alt="Loaves of fresh bread" class="bakery-image">
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-  <!-- Picture 3: Cakes -->
-  <img src="cakes.jpg" alt="Delicious cakes" class="bakery-image">
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
 
-  <a href="https://www.example.com" target="_blank">Visit Our Store</a>
-
-  <br><br>
-  <button onclick="showMessage()">Click Me!</button>
+    <footer>
+      <p>© 2025 My Bakery. All rights reserved.</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
